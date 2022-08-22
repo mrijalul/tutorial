@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LOP U</title>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+	<style>
+		body {
+		    font-family: 'Nunito';
+		    font-size: 35px;
+		}
+		.outer {
+			display: table;
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+		}
+
+		.middle {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.inner {
+			margin-left: auto;
+			margin-right: auto;
+			width: 400px;
+			text-align: center;
+			color: #fff;
+		}
+		.btn {
+			box-shadow:inset -1px 1px 0px 1px #ffffff;
+			background-color:transparent;
+			border-radius:21px;
+			border:3px solid #fff;
+			display:inline-block;
+			cursor:pointer;
+			color:#fff;
+			font-family: 'Nunito';
+			font-size:12px;
+			font-style:italic;
+			padding:6px 24px;
+			text-decoration:none;
+			/*text-shadow:2px 2px 0px #ffffff;*/
+		}
+		.btn:hover {
+			background-color:transparent;
+		}
+		.btn:active {
+			position:relative;
+			top:1px;
+		}
+
+	</style>
+</head>
+<body style="background: #F65A83;">
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">
+
+				<h1>
+					<span id="hide1">UPIN</span>
+					<span id="hide3" style="display: none;">U</span>
+					 & 
+					 <span id="hide2">IPIN</span>
+				</h1>
+
+				<p><button class="btn" id="tekan_dong">tekan dong pliiissssss</button></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$('#tekan_dong').on('click', function(){
+				$('#hide2').text('I');
+				$('#hide1').hide();
+				$('#hide3').fadeIn(5000);
+			});
+		});
+	</script>
+</body>
+</html>
